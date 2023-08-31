@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>Password Generator | Secure and Safe</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="inputBox">
+            <input type="text" class="passBox" id="passBox" disabled>
+            <span class="material-symbols-outlined" id="copyIcon">content_copy</span>
+        </div>
+        <input type="range" min="'1" max="40" value="8" id="inputSlider">
+        <div class="row">
+            <p>Password Length</p>
+            <span id="slidervalue"></span>
+        </div>
+        <div class="row">
+            <label for="Uppercase">Include Uppercase letter (A-Z)</label>
+            <input type="checkbox" name="Uppercase" id="uppercase">
+        </div>
+        <div class="row">
+            <label for="lowercase">Include lowercase letter (a-z)</label>
+            <input type="checkbox" name="lowercase" id="lowercase">
+        </div>
+        <div class="row">
+            <label for="number">Include Number (0-9)</label>
+            <input type="checkbox" name="number" id="number">
+        </div>
+        <div class="row">
+            <label for="specialcase">Include Special Character (@!#$&)</label>
+            <input type="checkbox" name="specialcase" id="specialcase">
+        </div>
+        <button type="button" class="genBtn" id="genBtn">Generate Password</button>
+
+
+
+
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
